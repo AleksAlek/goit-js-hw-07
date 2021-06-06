@@ -2,6 +2,10 @@ ul {
   display: flex;
 }
 
+li {
+  list-style: none;
+}
+
 li:not(:last-child) {
   margin-right: 30px;
 }
