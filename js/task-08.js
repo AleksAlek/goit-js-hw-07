@@ -27,6 +27,13 @@ function createBoxes(amount) {
   }
 }
 
+function destroyBoxes() {
+  const allBoxes = boxes.querySelectorAll("div");
+  allBoxes.forEach((box) => boxes.removeChild(box));
+}
+
 renderButton.addEventListener("click", () => {
   createBoxes(inputArea.value - 1);
 });
+
+destroyButton.addEventListener("click", destroyBoxes);
