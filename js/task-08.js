@@ -4,6 +4,8 @@ const destroyButton = document.querySelector('[data-action="destroy"]');
 const inputArea = document.querySelector("input");
 
 function createBoxes(amount) {
+  destroyBoxes();
+
   let basicWidth = 30;
   let basicHeight = 30;
 
