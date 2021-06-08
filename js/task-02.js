@@ -19,5 +19,8 @@ const newList = ingredients.map((ingredient) => {
   const item = document.createElement("li");
 
   item.textContent = ingredient;
-  return generalList.append(item);
+
+  return item;
 });
+
+generalList.append(...newList);
