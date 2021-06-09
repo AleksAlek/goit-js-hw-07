@@ -7,7 +7,7 @@ function createBoxes(amount) {
   let basicWidth = 30;
   let basicHeight = 30;
 
-  for (let i = 0; i <= amount; i += 1) {
+  for (let i = 0; i < amount; i += 1) {
     const someDiv = document.createElement("div");
 
     let randomNumberForRed = Math.random() * (0, 255) + 0;
@@ -33,7 +33,7 @@ function destroyBoxes() {
 }
 
 renderButton.addEventListener("click", () => {
-  createBoxes(inputArea.value - 1);
+  createBoxes(inputArea.value);
 });
 
 destroyButton.addEventListener("click", destroyBoxes);
